@@ -18,28 +18,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="line-header">
-      <div class="container header-flex">
-        <nav class="head-menu">
-          <a href="./index.html" class="logo" lang="en"> Web<span class="logo2">Studio</span></a>
-          <ul class="site-navigation list">
-            <li class="item"><a href="./index.html" class="site-nav current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="site-nav">Портфоліо</a></li>
-            <li class="item"><a href="" class="site-nav">Контакти</a></li>
+    <header class="header">
+      <div class="container header__section">
+        <nav class="header__nav">
+          <a href="./index.html" class="header__logo" lang="en">
+            Web<span class="header__logo--black">Studio</span></a
+          >
+          <ul class="nav list">
+            <li class="nav__item"><a href="./index.html" class="nav__link current">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list contact-menu">
-          <li class="header-contact">
-            <a href="mailto:info@devstudio.com" class="class-contact">
-              <svg class="contact-icon-svg" width="16" height="12">
+        <ul class="list contact">
+          <li class="contact__header">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="header-contact">
-            <a href="tel:+380961111111" class="class-contact">
-              <svg class="contact-icon-svg" width="10" height="16">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-vector"></use>
               </svg>
               +38 096 111 11 11
@@ -353,10 +355,12 @@
     <footer class="section-footer">
       <div class="container footer-block">
         <div class="">
-          <a href="./index.html" class="logo" lang="en"> Web<span class="logo3">Studio</span></a>
-          <address class="contact">
+          <a href="./index.html" class="header__logo" lang="en">
+            Web<span class="header__logo--white">Studio</span></a
+          >
+          <address class="">
             <ul class="site-footer list">
-              <li class="footer-bottom">
+              <li class="footer-bottom footer-top">
                 <a href="https://goo.gl/maps/ReowiNLjcF3ipeQF8" class="site-footer-2 link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
@@ -372,7 +376,7 @@
         <!-- Футер соцмережі -->
 
         <div class="footer-list">
-          <p class="footer-connect">Приєднуйтесь</p>
+          <p class="footer-text">Приєднуйтесь</p>
           <ul class="list footer-icon">
             <li>
               <a href="" class="footer-fon">
