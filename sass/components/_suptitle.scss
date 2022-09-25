@@ -1,0 +1,47 @@
+.text-perevag {
+  line-height: 1.7;
+  max-width: 270px;
+}
+
+.description-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  color: var(--primari-buckground-color);
+  text-transform: uppercase;
+  padding: 27px 0px;
+}
+
+.profession {
+  color: var(--primary-font-color);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  text-transform: uppercase;
+  color: var(--primari-buckground-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  margin-bottom: 20px;
+}
+
+.text-team {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.text-team-2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: rgba(117, 117, 117, 1);
+
+  padding-top: 4px;
+  max-width: 322px;
+  margin-left: 24px;
+}

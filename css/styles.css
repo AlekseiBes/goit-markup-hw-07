@@ -1,126 +1,4 @@
-/* Ширина */
-
-/* Відступи */
-
-/* Лінія хедера */
-
-.header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
-
-.header__section {
-  display: flex;
-  align-items: center;
-}
-
-/* Логотип */
-
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  color: var(--secondary-font-color);
-  font-family: 'Raleway', 'sans-serif';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.header__logo--black {
-  color: var(--font-color-logo-2);
-}
-
-.header__logo--white {
-  color: var(--primari-buckground-color);
-}
-
-/*  Навігація */
-
-.nav {
-  display: flex;
-  margin-left: 93px;
-  gap: 50px;
-}
-
-.nav__link {
-  color: var(--third-font-color);
-  font-weight: 500;
-  line-height: 1.14;
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: var(--animation);
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--secondary-font-color);
-}
-
-.current {
-  color: var(--secondary-font-color);
-  position: relative;
-}
-
-.current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--secondary-font-color);
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  border-radius: 2px;
-}
-
-/* Контакти */
-
-.contact {
-  display: flex;
-  margin-left: auto;
-  gap: 30px;
-}
-
-.contact__link {
-  display: inline-flex;
-  padding: 32px 0px 32px;
-  align-items: center;
-
-  color: var(--contact-color);
-  font-weight: 500;
-  line-height: 1.14;
-  font-size: 16px;
-  transition: color var(--animation);
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--secondary-font-color);
-}
-
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 /* Герой */
-
-.title-h1 {
-  text-transform: uppercase;
-  color: var(--primari-buckground-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
 
 .section-hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -136,66 +14,11 @@
   background-size: 1600px;
 }
 
-/* Кнопка замовлення */
-
-.button-posluga {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  display: inline-block;
-  width: 216px;
-  height: 50px;
-  transition: background-color var(--animation);
-}
-
-.button-posluga:hover,
-.button-posluga:focus {
-  background-color: rgba(24, 140, 232, 1);
-  color: var(--primari-buckground-color);
-}
-
-/* Заголовок переваг */
-
-.title-h3 {
-  text-transform: uppercase;
-  color: var(--third-font-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  max-width: 270px;
-
-  margin-bottom: 10px;
-}
-
 /* Перелік переваг */
 
 .list-perevag {
   display: flex;
   column-gap: 30px;
-}
-
-.text-perevag {
-  line-height: 1.7;
-  max-width: 270px;
-}
-
-/* Заголовок наша робота-команда */
-
-.title-h2 {
-  color: var(--third-font-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .section-bott {
@@ -224,18 +47,6 @@
   background-color: var(--primari-buckground-color);
   max-width: 270px;
   text-align: center;
-}
-
-.profession {
-  color: var(--primary-font-color);
-  font-size: 16px;
-  line-height: 1.9;
-  margin-bottom: 16px;
-}
-
-.text-team {
-  font-size: 16px;
-  line-height: 1.19;
 }
 
 /* footer font color */
@@ -321,68 +132,10 @@
 
 /* Портфолио */
 
-/* Заголовок */
-
-.title-h2-2 {
-  color: var(--third-font-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  max-width: 322px;
-  margin-left: 24px;
-}
-
-.text-team-2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  color: rgba(117, 117, 117, 1);
-
-  padding-top: 4px;
-  max-width: 322px;
-  margin-left: 24px;
-}
-
 .portfolio-box {
   padding: 20px 0px;
   border: 1px solid rgba(238, 238, 238, 1);
   border-top: none;
-}
-
-/* Кнопки портфоліо */
-
-.btn-flex {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  column-gap: 8px;
-}
-
-.button-portfolio {
-  display: inline-block;
-  min-width: 73px;
-  padding: 6px 22px;
-  border: none;
-
-  background-color: var(--buckground-color-1);
-  color: var(--third-font-color);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  border-radius: 4px;
-
-  transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
-}
-
-.button-portfolio:focus,
-.button-portfolio:hover {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Сітка єлементів */
@@ -449,14 +202,6 @@
 
 /* Команда */
 
-.title-h3-2 {
-  color: var(--third-font-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 10px;
-}
-
 .team-box {
   padding: 30px 0px;
 }
@@ -495,16 +240,6 @@
 }
 
 /* Футер соцмережі */
-
-.footer-text {
-  text-transform: uppercase;
-  color: var(--primari-buckground-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-
-  margin-bottom: 20px;
-}
 
 .footer-icon {
   display: flex;
@@ -555,31 +290,6 @@
 
 .footer-email-form {
   display: flex;
-}
-
-.footer-email-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primari-buckground-color);
-  background-color: var(--secondary-font-color);
-  border-radius: 4px;
-  border: none;
-  width: 200px;
-  height: 50px;
-  align-self: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--animation);
-}
-
-.footer-email-btn:hover,
-.footer-email-btn:focus {
-  background-color: rgba(24, 140, 232, 1);
 }
 
 .email-form-input {
@@ -706,15 +416,6 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.description-text {
-  font-weight: 700;
-  line-height: 1.14;
-  text-align: center;
-  color: var(--primari-buckground-color);
-  text-transform: uppercase;
-  padding: 27px 0px;
-}
-
 /* Форма заповнення */
 
 .modal-text {
@@ -733,15 +434,6 @@
 
 .modal-text-form {
   margin-bottom: 10px;
-}
-
-.title-form {
-  display: block;
-  font-size: 12px;
-  line-height: 1.16;
-  color: var(--contact-color);
-
-  margin-bottom: 4px;
 }
 
 .modal-icon-wrapper {
@@ -868,31 +560,4 @@
 .checkbox-choice {
   display: none;
   fill: var(--primari-buckground-color);
-}
-
-/* Кнопка відправки форми */
-
-.molal-btn-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primari-buckground-color);
-  background-color: var(--secondary-font-color);
-  border-radius: 4px;
-  border: none;
-  width: 200px;
-  height: 50px;
-  align-self: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--animation);
-}
-
-.molal-btn-submit:hover,
-.molal-btn-submi:focus {
-  background-color: rgba(24, 140, 232, 1);
 }
