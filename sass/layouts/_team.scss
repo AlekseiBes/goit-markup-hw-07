@@ -1,0 +1,71 @@
+.text-team {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.color-team {
+  background-color: var(--buckground-color-1);
+}
+
+.list-team {
+  display: flex;
+  column-gap: 30px;
+}
+
+.color-foto-team {
+  background-color: var(--primari-buckground-color);
+  max-width: 270px;
+  text-align: center;
+}
+
+.title-h3-2 {
+  color: var(--third-font-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.profession {
+  color: var(--primary-font-color);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.team-box {
+  padding: 30px 0px;
+}
+
+.team-icon {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.team-fon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--animation);
+}
+
+.team-fon svg {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill var(--animation);
+}
+
+.team-fon:hover,
+.team-fon:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.team-fon:hover svg,
+.team-fon:focus svg {
+  fill: rgba(255, 255, 255, 1);
+}
