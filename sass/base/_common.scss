@@ -1,0 +1,47 @@
+body {
+    background-color: var(--primari-buckground-color);
+    color: var(--primary-font-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /* Відміна підкреслення у посилань */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Скидання маркувань списку */
+  
+  .list {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  /* Скидання стилів марджин */
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
