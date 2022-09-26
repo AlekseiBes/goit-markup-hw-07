@@ -596,7 +596,7 @@ img {
   justify-content: center;
   transition: background-color var(--animation), fill var(--animation);
 }
-.team__social-fon:hover, .team__social-fon:hover {
+.team__social-fon:hover, .team__social-fon:focus {
   background-color: rgb(33, 150, 243);
   fill: rgb(255, 255, 255);
 }
