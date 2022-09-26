@@ -34,10 +34,17 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-
   display: block;
   fill: var(--third-font-color);
   transition: fill var(--animation), border var(--animation);
+
+  .input-form:hover + & {
+    fill: var(--secondary-font-color);
+  }
+  
+  .input-form:focus + & {
+    fill: var(--secondary-font-color);
+  }
 }
 
 .input-form {
@@ -50,22 +57,12 @@
 
   padding-left: 42px;
   transition: border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--secondary-font-color);
+  }
 }
-
-.input-form:hover,
-.input-form:focus {
-  border: 1px solid var(--secondary-font-color);
-}
-
-.input-form:hover + .modal-icon {
-  fill: var(--secondary-font-color);
-}
-
-.input-form:focus + .modal-icon {
-  fill: var(--secondary-font-color);
-}
-
-
 
 .modal-form-user {
   margin-bottom: 20px;
@@ -82,18 +79,18 @@
 
   padding: 12px 16px;
   transition: border-color var(--animation);
-}
 
-.input-form-user::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  color: rgba(117, 117, 117, 0.5);
-}
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--secondary-font-color);
+  }
 
-.input-form-user:hover,
-.input-form-user:focus {
-  outline: none;
-  border-color: var(--secondary-font-color);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox-policy {
@@ -109,16 +106,29 @@
   appearance: none;
 }
 
-.input-form-policy:checked + .checkbox-icon {
-  background-color: var(--secondary-font-color);
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--third-font-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  .input-form-policy:checked + & {
+    background-color: var(--secondary-font-color);
+  }
+
+  .input-form-policy:focus + & {
+    box-shadow: 0 0 0 2px var(--secondary-font-color);
+  }
 }
 
-.input-form-policy:checked + .checkbox-icon .checkbox-choice {
-  display: block;
-}
+.checkbox-choice {
+  display: none;
+  fill: var(--primari-buckground-color);
 
-.input-form-policy:focus + .checkbox-icon {
-  box-shadow: 0 0 0 2px var(--secondary-font-color);
+  .input-form-policy:checked + .checkbox-icon & {
+    display: block;
+  }
 }
 
 .modal-policy {
@@ -134,17 +144,4 @@
   display: inline-block;
   line-height: 1.71;
   color: var(--contact-color);
-}
-
-.checkbox-icon {
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--third-font-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.checkbox-choice {
-  display: none;
-  fill: var(--primari-buckground-color);
 }

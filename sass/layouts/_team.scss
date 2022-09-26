@@ -51,26 +51,19 @@
 }
 
 .team__social-fon {
+  fill: rgba(175, 177, 184, 1);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color var(--animation);
+  transition: background-color var(--animation), fill var(--animation);
+  
 
   &:hover,
-  &:focus {
+  &:hover {
     background-color: rgba(33, 150, 243, 1);
-  }
-}
-
-.team__social-icon {
-  fill: rgba(175, 177, 184, 1);
-  transition: fill var(--animation);
-
-  &:hover,
-  &:focus {
     fill: rgba(255, 255, 255, 1);
   }
 }
