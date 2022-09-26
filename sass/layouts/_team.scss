@@ -58,27 +58,19 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--animation);
-}
 
-.team__social-fon:hover,
-.team__social-fon:focus {
-  background-color: rgba(33, 150, 243, 1);
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+  }
 }
 
 .team__social-icon {
   fill: rgba(175, 177, 184, 1);
   transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: rgba(255, 255, 255, 1);
+  }
 }
-
-.team__social-icon:hover,
-.team__social-icon:focus {
-  fill: rgba(255, 255, 255, 1);
-}
-
-
-
-
-
-
-
-

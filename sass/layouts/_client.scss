@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.client__title{
+.client__title {
   color: var(--third-font-color);
   font-weight: 700;
   font-size: 36px;
@@ -27,6 +27,12 @@
   align-items: center;
   justify-content: center;
   transition: border var(--animation);
+  
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+    border-radius: 4px;
+  }
 }
 
 .client-fon svg {
@@ -37,10 +43,4 @@
 .client-fon:hover svg,
 .client-fon:focus svg {
   fill: rgba(33, 150, 243, 1);
-}
-
-.client-fon:hover,
-.client-fon:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
-  border-radius: 4px;
 }

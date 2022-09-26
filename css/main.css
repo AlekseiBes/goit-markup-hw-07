@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-font-color: rgba(117, 117, 117, 1);
   --primari-buckground-color: rgba(255, 255, 255, 1);
@@ -33,12 +32,10 @@ body {
   font-size: 14px;
 }
 
-/* Відміна підкреслення у посилань */
 a {
   text-decoration: none;
 }
 
-/* Скидання маркувань списку */
 .list {
   list-style: none;
 }
@@ -47,7 +44,6 @@ img {
   display: block;
 }
 
-/* Скидання стилів марджин */
 h1,
 h2,
 h3,
@@ -100,9 +96,7 @@ img {
   cursor: pointer;
   transition: background-color var(--animation);
 }
-
-.molal-btn-submit:hover,
-.molal-btn-submi:focus {
+.molal-btn-submit:hover, .molal-btn-submit:focus {
   background-color: rgb(24, 140, 232);
 }
 
@@ -169,7 +163,6 @@ img {
 .modal-close {
   transition: fill var(--animation);
 }
-
 .close-btn:hover .modal-close {
   fill: var(--secondary-font-color);
 }
@@ -214,6 +207,17 @@ img {
   transition: fill var(--animation), border var(--animation);
 }
 
+.input-form {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+  padding-left: 42px;
+  transition: border-color var(--animation);
+}
+
 .input-form:hover,
 .input-form:focus {
   border: 1px solid var(--secondary-font-color);
@@ -225,17 +229,6 @@ img {
 
 .input-form:focus + .modal-icon {
   fill: var(--secondary-font-color);
-}
-
-.input-form {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  outline: transparent;
-  padding-left: 42px;
-  transition: border-color var(--animation);
 }
 
 .modal-form-user {
@@ -340,13 +333,10 @@ img {
   transform: translateY(100%);
   transition: transform var(--animation);
 }
-
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
+.portfolio-link:hover .overlay, .portfolio-link:focus .overlay {
   transform: translateY(0%);
 }
 
-/* Лінія хедера */
 .header {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
@@ -361,7 +351,6 @@ img {
   align-items: center;
 }
 
-/*  Навігація */
 .nav {
   display: flex;
   margin-left: 93px;
@@ -377,9 +366,7 @@ img {
   padding-bottom: 32px;
   transition: var(--animation);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--secondary-font-color);
 }
 
@@ -387,7 +374,6 @@ img {
   color: var(--secondary-font-color);
   position: relative;
 }
-
 .nav__link_current::after {
   content: "";
   display: block;
@@ -400,7 +386,6 @@ img {
   border-radius: 2px;
 }
 
-/* Контакти */
 .contact {
   display: flex;
   margin-left: auto;
@@ -417,9 +402,7 @@ img {
   font-size: 16px;
   transition: color var(--animation);
 }
-
-.contact__link:hover,
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--secondary-font-color);
 }
 
@@ -468,9 +451,7 @@ img {
   height: 50px;
   transition: background-color var(--animation);
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: rgb(24, 140, 232);
   color: var(--primari-buckground-color);
 }
@@ -624,9 +605,7 @@ img {
   justify-content: center;
   transition: background-color var(--animation);
 }
-
-.team__social-fon:hover,
-.team__social-fon:focus {
+.team__social-fon:hover, .team__social-fon:focus {
   background-color: rgb(33, 150, 243);
 }
 
@@ -634,9 +613,7 @@ img {
   fill: rgb(175, 177, 184);
   transition: fill var(--animation);
 }
-
-.team__social-icon:hover,
-.team__social-icon:focus {
+.team__social-icon:hover, .team__social-icon:focus {
   fill: rgb(255, 255, 255);
 }
 
@@ -669,6 +646,10 @@ img {
   justify-content: center;
   transition: border var(--animation);
 }
+.client-fon:hover, .client-fon:focus {
+  border: 1px solid rgb(33, 150, 243);
+  border-radius: 4px;
+}
 
 .client-fon svg {
   fill: rgb(175, 177, 184);
@@ -678,12 +659,6 @@ img {
 .client-fon:hover svg,
 .client-fon:focus svg {
   fill: rgb(33, 150, 243);
-}
-
-.client-fon:hover,
-.client-fon:focus {
-  border: 1px solid rgb(33, 150, 243);
-  border-radius: 4px;
 }
 
 .footer-text {
@@ -701,9 +676,7 @@ img {
   transition: color var(--animation);
   font-style: normal;
 }
-
-.site-footer:hover,
-.site-footer:focus {
+.site-footer:hover, .site-footer:focus {
   color: var(--secondary-font-color);
 }
 
@@ -712,9 +685,7 @@ img {
   transition: color var(--animation);
   font-style: normal;
 }
-
-.site-footer-2:hover,
-.site-footer-2:focus {
+.site-footer-2:hover, .site-footer-2:focus {
   color: var(--secondary-font-color);
 }
 
@@ -750,14 +721,12 @@ img {
   justify-content: center;
   transition: background-color var(--animation);
 }
-
-.footer-fon svg {
-  fill: rgb(255, 255, 255);
+.footer-fon:hover, .footer-fon:focus {
+  background-color: rgb(33, 150, 243);
 }
 
-.footer-fon:hover,
-.footer-fon:focus {
-  background-color: rgb(33, 150, 243);
+.footer__icon {
+  fill: rgb(255, 255, 255);
 }
 
 .section-footer .footer-block {
@@ -801,7 +770,7 @@ img {
   margin-left: 10px;
 }
 
-.footer-email-btn {
+.footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,9 +789,7 @@ img {
   cursor: pointer;
   transition: background-color var(--animation);
 }
-
-.footer-email-btn:hover,
-.footer-email-btn:focus {
+.footer__button:hover, .footer__button:focus {
   background-color: rgb(24, 140, 232);
 }
 
@@ -873,9 +840,7 @@ img {
   border-radius: 4px;
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-
-.button-portfolio:focus,
-.button-portfolio:hover {
+.button-portfolio:focus, .button-portfolio:hover {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -900,8 +865,6 @@ img {
   display: block;
   transition: box-shadow var(--animation);
 }
-
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */

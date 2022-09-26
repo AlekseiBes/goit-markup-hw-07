@@ -13,22 +13,22 @@
   line-height: 1.7;
   transition: color var(--animation);
   font-style: normal;
-}
 
-.site-footer:hover,
-.site-footer:focus {
-  color: var(--secondary-font-color);
+  &:hover,
+  &:focus {
+    color: var(--secondary-font-color);
+  }
 }
 
 .site-footer-2 {
   color: var(--primari-buckground-color);
   transition: color var(--animation);
   font-style: normal;
-}
 
-.site-footer-2:hover,
-.site-footer-2:focus {
-  color: var(--secondary-font-color);
+  &:hover,
+  &:focus {
+    color: var(--secondary-font-color);
+  }
 }
 
 .footer-top {
@@ -62,15 +62,15 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+  }
 }
 
-.footer-fon svg {
+.footer__icon {
   fill: rgba(255, 255, 255, 1);
-}
-
-.footer-fon:hover,
-.footer-fon:focus {
-  background-color: rgba(33, 150, 243, 1);
 }
 
 .section-footer .footer-block {
@@ -81,6 +81,7 @@
 .section-footer .footer-list {
   margin-left: 70px;
 }
+
 .footer-form {
   margin-left: auto;
 }
@@ -113,8 +114,7 @@
   margin-left: 10px;
 }
 
-
-.footer-email-btn {
+.footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,9 +132,9 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--animation);
-}
 
-.footer-email-btn:hover,
-.footer-email-btn:focus {
-  background-color: rgba(24, 140, 232, 1);
+  &:hover,
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+  }
 }
