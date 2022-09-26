@@ -39,12 +39,12 @@
   color: var(--secondary-font-color);
 }
 
-.current {
+.nav__link_current {
   color: var(--secondary-font-color);
   position: relative;
 }
 
-.current::after {
+.nav__link_current::after {
   content: '';
   display: block;
   width: 100%;

@@ -1,24 +1,33 @@
-.text-team {
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.color-team {
+.team {
   background-color: var(--buckground-color-1);
 }
 
-.list-team {
+.team__title {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team__list {
   display: flex;
   column-gap: 30px;
 }
 
-.color-foto-team {
+.team__img {
   background-color: var(--primari-buckground-color);
   max-width: 270px;
   text-align: center;
 }
 
-.title-h3-2 {
+.team__box {
+  padding: 30px 0px;
+}
+
+.team__worker {
   color: var(--third-font-color);
   font-weight: 500;
   font-size: 16px;
@@ -26,18 +35,14 @@
   margin-bottom: 10px;
 }
 
-.profession {
+.team__profession {
   color: var(--primary-font-color);
   font-size: 16px;
   line-height: 1.9;
   margin-bottom: 16px;
 }
 
-.team-box {
-  padding: 30px 0px;
-}
-
-.team-icon {
+.team__social {
   padding: 0;
   margin: 0;
   display: flex;
@@ -45,7 +50,7 @@
   justify-content: center;
 }
 
-.team-fon {
+.team__social-fon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -55,17 +60,25 @@
   transition: background-color var(--animation);
 }
 
-.team-fon svg {
+.team__social-fon:hover,
+.team__social-fon:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.team__social-icon {
   fill: rgba(175, 177, 184, 1);
   transition: fill var(--animation);
 }
 
-.team-fon:hover,
-.team-fon:focus {
-  background-color: rgba(33, 150, 243, 1);
-}
-
-.team-fon:hover svg,
-.team-fon:focus svg {
+.team__social-icon:hover,
+.team__social-icon:focus {
   fill: rgba(255, 255, 255, 1);
 }
+
+
+
+
+
+
+
+
